@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+  <main>
+    <h1 class="title">Desserts</h1>
+    <div class="product-list-grid js-product-list-grid"></div>
+  </main>
+
+  <div class="cart-section">
+    <h1 class="cart-quantity js-cart-quantity">Your Cart (0)</h1>
+
+    <div class="cart js-cart">
+      <div class="list-items js-list-items"></div>
+      
+      <div class="order">
+        <div class="order-total js-order-total">
+          <p>Order Total</p>
+          <h2>$46.50</h2>
+        </div>
+        <div class="delivery">
+          <img src="./assets/images/icon-carbon-neutral.svg">
+          <p>This is a <span>carbon-neutral</span> delivery</p>
+        </div>
+        <button class="order-btn js-order-btn">Confirm Order</button>
+
+        <dialog class="order-confirm">
+          <img src="./assets/images/icon-order-confirmed.svg" class="confirm-image">
+          <h2>Order Confirmed</h2>
+          <p class="order-message">We hope you enjoy your food!</p>
+          <div class="order-list">
+            <div class="order-list-grid js-order-list-grid"></div>
+
+            <div class="order-list-total">
+              <p>Order Total</p>
+              <h2>$46.50</h2>
+            </div>
+
+          </div>
+          <button class="close-confirm">Start New Order</button>
+        </dialog>
+      </div>
+
+    </div>
+    
+
+    <div class="cart-empty js-cart-empty">
+      <img src="./assets/images/illustration-empty-cart.svg">
+      <p>Your added items will appear here</p>
+    </div>
+  </div>
+
+
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
